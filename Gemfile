@@ -36,6 +36,6 @@ group :test do
 end
 
 
-gem 'pg'
+gem 'mysql2'
 
 
