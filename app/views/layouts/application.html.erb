@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      /* Override some defaults */
+      html, body {
+	
+        background-color: #F8F8F8;
+      }
+      body {
+		background: #F8F8F8 url("/images/clouds.png") scroll repeat-x 0 -5px;
+        padding-top: 40px; /* 40px to make the container go all the way to the bottom of the topbar */
+      }
+      .container > footer p {
+        text-align: center; /* center align it with the container */
+      }
+      .container {
+        width: 820px; /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
+      }
+
+      /* The white background content wrapper */
+      .content {
+		background-color: white;
+       
+        padding: 20px;
+        margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+        -webkit-border-radius: 0 0 6px 6px;
+           -moz-border-radius: 0 0 6px 6px;
+                border-radius: 0 0 6px 6px;
+        -webkit-box-shadow: 0 1px 3px #888888;
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+                box-shadow: 0 1px 2px rgba(0,0,0,.15);
+      }
+
+      /* Page header tweaks */
+      .page-header {
+	
+        background: -webkit-gradient(linear, left top, left bottom, from(#E5E5E5), to(#C7C7C7));
+		background-color: #0097C8;
+        padding: 20px 20px 10px;
+        margin: -20px -20px 20px;
+      }
+
+	  .page-header h1{
+		color:#17181F;
+		text-shadow:0 1px 0 white;
+	}
+
+      /* Styles you shouldn't keep as they are for displaying this base example only */
+      .content .span10,
+      .content .span4 {
+        min-height: 500px;
+      }
+  
+
+      .topbar .btn {
+        border: 0;
+      }
+
+    </style>
+
+	<title>Flashpoint</title>
+		  <%= javascript_include_tag "application" %>
+	  <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="content">
+        <div class="page-header">
+          <h1>Welcome  </h1>
+        </div>
+        <div class="row">
+          <div class="span10">
+			<div class='row'>
+           		<div class="span10">
+					<%= yield %>
+				</div>
+			</div>
+          </div>
+          <div class="span4">
+            <h3>I'm your PANDA!</h3>
+				<ul class="media-grid">
+				  <li>
+				    <a href="#">
+				      <img class="thumbnail" src="http://placehold.it/210x150" alt="">
+				    </a>
+				  </li>
+				<ul/>
+		
+					<address>
+					<strong>Chris Tosswill </strong><br/>
+					ctosswill@engineyard.com<br/>
+					@Tosswill<br/>
+					</address>
+					
+					<p>
+						Email or tweet me if you run into any issues... or just want to say hi.
+					</p>
+			
+				
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>© Engine Yard 2011</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+  
+
+</body></html>
