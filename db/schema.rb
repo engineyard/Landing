@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(:version => 20111012212024) do
   create_table "contacts", :force => true do |t|
     t.string   "email"
     t.string   "phone"
-    t.string   "type"
+    t.string   "account_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

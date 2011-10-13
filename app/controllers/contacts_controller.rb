@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
-  # GET /contacts
-  # GET /contacts.json
+ http_basic_authenticate_with :name => "chris", :password => "Omega2010" , :except => ['new','create']
+ 
   def index
     @contacts = Contact.all
 
@@ -44,7 +44,7 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
-        format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
+        format.html { redirect_to( @contact.redirect_me ) }
         format.json { render json: @contact, status: :created, location: @contact }
       else
         format.html { render action: "new" }
