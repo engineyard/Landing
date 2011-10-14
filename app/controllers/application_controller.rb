@@ -6,4 +6,5 @@ class ApplicationController < ActionController::Base
     request.protocol + request.host_with_port + '/images/' + name
   end
   helper_method :abs_img
+ 
 end
