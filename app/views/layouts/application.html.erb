@@ -3,10 +3,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+    <title>Welcome, startups!</title>
+    
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -49,7 +47,9 @@
       .page-header {
 	
         background: -webkit-gradient(linear, left top, left bottom, from(#E5E5E5), to(#C7C7C7));
-		background-color: #0097C8;
+        background-image: -moz-linear-gradient( top , #E5E5E5 , #C7C7C7 );
+	
+	
         padding: 20px 20px 10px;
         margin: -20px -20px 20px;
       }
@@ -96,23 +96,33 @@
             <h3>I'm your PANDA!</h3>
 				<ul class="media-grid">
 				  <li>
-				    <a href="#">
-				      <img class="thumbnail" src="http://placehold.it/210x150" alt="">
+				    <a href="http://twitter.com/#!/Tosswill">
+						<%= image_tag('me.jpg' , :class => 'thumbnail')%>
+				  
 				    </a>
 				  </li>
-				<ul/>
+				</ul>
 		
 					<address>
 					<strong>Chris Tosswill </strong><br/>
 					ctosswill@engineyard.com<br/>
-					@Tosswill<br/>
+					<a href="http://twitter.com/#!/Tosswill">@Tosswill </a><br/>
 					</address>
 					
 					<p>
 						Email or tweet me if you run into any issues... or just want to say hi.
 					</p>
-			
-				
+					<p style='padding-top:25px;'>
+					
+					<a href="http://engineyard.com">
+						<%= image_tag('ey.png')%>
+					</a>
+					</p>
+					<p>
+						<a href="http://orchestra.io">
+							<%= image_tag('orc.png')%>
+						</a>
+					</p>
           </div>
         </div>
       </div>
