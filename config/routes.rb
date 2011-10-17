@@ -1,8 +1,8 @@
 Tippoint::Application.routes.draw do
   
-  namespace :prom do
-    resources :contacts
-  end
+ 
+  resources :contacts
+ 
   
   root :to => 'contacts#new'
 end
